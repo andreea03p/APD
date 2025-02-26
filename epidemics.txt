@@ -1,0 +1,55 @@
+// ------Problem description--------
+
+Large-scale epidemic simulations have a great importance for public health. However, large-scale simulations  of realistic epidemic models require immense computing power and they are realised as parallel cloud distributed solutions.
+In this assignment you implement and parallelize a highly simplified simulation model for the evolution of an infectious disease in a population.
+A community of people inhabit a given area. Assume that the area is of a rectangular form and the position of each person is defined by his/her coordinates x,y.  The coordinates in this problem are discrete variables,  covering a  given fixed small area that is the area where contagion can occur. If 2 persons are in the contagion area, they are at the same coordinates.
+Some persons are infected with a contagious disease. Do a simulation predicting how the community will be affected by the disease over a period of time. Use the following simplifying assumptions scenario:
+Persons move around. We simulate discrete time. At every time moment, persons can make only one move (change their coordinates once). Each person has a very simplified movement pattern described by:
+•	Direction (N,S, E, W).  A person moves always in the same direction. If going in their moving direction the person arrives at the border of the rectangular simulation area,  the person starts “going back”  (reverses the movement direction, until the opposite border is reached).
+•	 Amplitude: how far away is one movement (the current coordinate is incremented/decremented by the value of the amplitude).  If the amplitude of one movement spans over intermediate positions where other people are located, these people are NOT considered contacts thus they are not in danger of being infected. Only the people staying for at least one simulation time moment at the same location (the destination of the movement) can get infected.
+A  Person can be: Infected (they have the disease), immune(they had the disease recently ), susceptible (they are not immune and not currently infected  – they get infected if they are in contact with an infected person). In this simplified model, you can consider that the duration of the sickness is a INFECTED_DURATION constant number of simulation time moments for every person (number of simulation time moments while a person stays infected).  After this time, the person recovers and gets immune for a  IMMUNE_DURATION constant number of time moments.
+Every person has a current status and a future status. The status of a person changes at every simulation time moment. The future status can be determined by the passing of time (healing and getting immunity or losing his  immunity) or can be changed as a function of the current status of other persons at the same location (getting infected).
+While (simulation time is not over)
+     For all persons Update location
+     For all persons compute future status
+     Increment simulation time and make future status ->  current
+                                            
+Requirements:
+Read initial data:
+Following parameters will be given as command line arguments:
+TOTAL_SIMULATION_TIME,  InputFileName, ThreadNumber
+Input files must contain:
+·       Size of simulation area:  MAX_X_COORD, MAX_Y_COORD
+·       Number N  of persons in the area.  For each person, on a new line:
+o   PersonID
+o   Initial coordinates x, y. they must be between 0..MAX_X_COORD, 0..MAX_Y_COORD
+o   Initial status: (infected=0, susceptible = 1) Initially we consider that there are no immune persons. For the initially infected persons, we consider that they got infected at the moment zero of the simulation.
+o   Movement pattern direction: (N=0, S=1, E=2, W=3)
+o   Movement pattern amplitude: an integer number, smaller than the area dimension on the movement direction
+Algorithms implementation:
+Implement the algorithm that simulates the evolution of the epidemic both as a sequential and parallel version. The parallel version will take into account the number of threads specified as input argument.
+The parallel version will use pthreads.  Divide the persons across the processing threads.  Make sure to have the needed synchronization points between threads! Before going on to update infection status, all persons must have updated locations.  Before going on to simulate next time moment,  all persons must have updated infection status.
+Expected results:
+The output: For each person:
+•	 Final coordinates x, y
+•	  Final status (infected, immune, susceptible)
+•	 Infection counter: how many times during the simulation did the person become infected
+The final output will be saved in files. If input file was  f.txt, then output files are following the name convention f_serial_out.txt and f_parallel_out.txt
+Only the final result is saved – intermediate status at every simulation time moment is not saved in files.
+Implement an automatic verification method to compare that the serial and parallel versions produce the same result.  
+The program must provide 2 modes of running: the interactive (DEBUG) mode, when the evolution of the persons is printed after each generation, and the normal mode (without printing) for performance measurements.
+Measure serial and parallel runtime and compute the speedup. The measured runtime does NOT include reading initial configuration from file and writing the final configuration in a file.
+Repeat measurements for different sizes of the population, number of simulated time units, and different number of threads.
+Population sizes:  10K, 20K, 50K, 100K, 500K
+Simulation time: 50,  100, 150, 200, 500
+
+
+
+
+// OpenMP
+
+In this assignment you implement and parallelize a highly simplified simulation model for the evolution of an infectious disease in a population, using parallel programming with OpenMP.
+Provide two different parallel versions of the epidemics simulation:
+
+V1: use parallel for,  investigate different scheduling policies and chunksizes
+V2:  you can either use manual explicit data partitioning or you can use omp tasks
