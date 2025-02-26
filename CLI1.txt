@@ -1,0 +1,306 @@
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
+CLI1
+Anagrams of raw are: raw
+rwa
+arw
+awr
+war
+wra
+
+
+CLI1
+Anagrams of bla are: bla
+bal
+lba
+lab
+alb
+abl
+
+
